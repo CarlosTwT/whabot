@@ -55,8 +55,8 @@ To add a new plugin, follow these steps:
    module.exports = {
      name: 'ping',
      category: 'info',
-     code: async (ctx) => {
-       ctx.reply('Pong!');
+     code: async (sock) => {
+       sock.reply('Pong!');
      }
    };
    ```
